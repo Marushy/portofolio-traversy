@@ -8,7 +8,6 @@ export default {
       title: "Name",
       type: "string",
       validation: (Rule) => Rule.required(),
-      validation: (Rule) => Rule.unique(),
     },
     {
       name: "slug",
