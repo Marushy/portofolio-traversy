@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Post from "./components/Post";
+import Posts from "./components/Posts";
+import Project from "./components/Project";
+import SingleProject from "./components/SingleProject";
+import NotFound from "./components/NotFound";
+import Tnavbar from "./components/Tnavbar";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Tnavbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route exact path="/posts/:slug" component={Post} />
+        <Route path="/posts" component={Posts} />
+        <Route exact path="/sketches/:_id" component={SingleProject} />
+        <Route path="/sketches" component={Project} />
+
+        <Route path="*" component={NotFound} />
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,13 +1,81 @@
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand", sans-serif;
+}
+.cursive {
+  font-weight: 700;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.home-name {
+  font-size: 150px;
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+.logo {
+  font-family: "Reggae One", cursive;
+}
+
+.hero {
+  background-image: url("./images/hero_web.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.image-holder {
+  width: 250px;
+}
+.image-sketch {
+  width: 35%;
+}
+
+.image-holder,
+.image-sketch img {
+  max-width: 100%;
+}
+
+.notfound {
+  height: 88vh;
+}
+
+.search {
+  min-width: 220px;
+  outline: none;
+}
+
+.buttonload {
+  background-color: #f5f82d; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 24px; /* Some padding */
+  font-size: 16px; /* Set a font-size */
+  width: 30%;
+  top: 40%;
+  left: 40%;
+  align-items: center;
+}
+
+/* Add a right margin to each icon */
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+  .image-sketch {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
