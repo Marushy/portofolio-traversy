@@ -44,7 +44,7 @@ const SingleProject = () => {
         />
       </div>
       <div className="bg-white ">
-        <div className="mx-32">
+        <div className="lg:mx-32 sm:mx-10">
           <h4 className="text-2xl font-bold my-4 sm:mt-1">{sketch.title}</h4>
           <p></p>
           <div className="description w-full text-gray-500 text-lg my-3">
