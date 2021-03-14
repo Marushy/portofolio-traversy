@@ -51,7 +51,7 @@ const Project = () => {
     );
 
   return (
-    <main className=" min-h-screen py-12 lg:px-20 px-16">
+    <main className=" min-h-screen py-12 lg:px-20 px-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive logo mb-3">
           Sketches
