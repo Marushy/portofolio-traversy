@@ -51,7 +51,7 @@ const Project = () => {
     );
 
   return (
-    <main className=" min-h-screen py-12 lg:px-20 px-12">
+    <main className=" min-h-screen py-12 md:px-20 px-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive logo mb-3">
           Sketches
@@ -59,7 +59,7 @@ const Project = () => {
         <h2 className="text-lg text-grey-600 flex justify-center mb-5 logo">
           by different artists. Click on sketch to find out more about it.
         </h2>
-        <div className="flex justify-center mb-2">
+        <div className="flex justify-center mb-2 md:text-lg text-sm">
           <SearchBox
             placeholder="serach sketches by author"
             handleChange={handleChange}
