@@ -38,8 +38,8 @@ const Post = () => {
 
   if (!singlePost)
     return (
-      <div class="buttonload">
-        <i class="fa fa-spinner fa-spin"></i>Loading
+      <div className="buttonload">
+        <i className="fa fa-spinner fa-spin"></i>Loading
       </div>
     );
   return (
