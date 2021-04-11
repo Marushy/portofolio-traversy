@@ -59,7 +59,7 @@ const Project = () => {
         <h2 className="text-lg text-grey-600 flex justify-center mb-5 logo">
           by different artists. Click on sketch to find out more about it.
         </h2>
-        <div className="flex justify-center mb-2 md:text-lg text-sm">
+        <div className="flex justify-center mb-2 md:text-md text-sm">
           <SearchBox
             placeholder="serach sketches by author"
             handleChange={handleChange}
